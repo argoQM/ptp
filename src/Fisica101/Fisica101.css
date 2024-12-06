@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Inconsolata:wght@200..900&family=Martian+Mono:wght@100..800&family=Nerko+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+.body {
+  margin: 0;
+  box-sizing: border-box;
+  --color_texto: #0e0036;
+  --color_fondoPrincipal: #f4f4f4;
+  --color_enfasis: #f2875f;
+  background-color: var(--color_fondoPrincipal);
+  color: var(--color_texto);
+  font-family: "Arimo", "Martian Mono";
+  font-size: 1rem;
+  text-align: center;
+  transition: 0.3s;
+}
+.activo {
+  --color_texto: #f4f4f4;
+  --color_fondoPrincipal: #0e0036;
+  --color_enfasis: #ff3b1f;
+}
+.bodyPrincipal2 {
+  margin: auto;
+  max-width: 1200px;
+  border: transparent solid 2px;
+  box-sizing: border-box;
+  width: 100dvw;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+}
+.temario {
+  display: flex;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0 25px;
+  width: 20%;
+  /* background-color: var(--color_texto); */
+  color: var(--color_fondoPrincipal);
+  align-items: center;
+  transition: 0.3s ease-in-out;
+}
+.temario:hover {
+  scale: 1.1;
+}
+.temario:hover .tituloCompleto {
+  visibility: visible;
+  display: flex;
+}
+.temario:hover .tituloAbreviado {
+  visibility: hidden;
+  display: none;
+}
+.temasCompletos {
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+  height: 70%;
+}
+.temasAbreviados {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  height: 70%;
+}
+.tituloCompleto {
+  min-height: 10%;
+  max-height: 10%;
+  visibility: hidden;
+  display: none;
+  box-sizing: border-box;
+  margin-top: 15px;
+  border: var(--color_fondoPrincipal) solid 1px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-color: var(--color_texto);
+  cursor: pointer;
+  user-select: none;
+  transition: 0.3s ease-in-out;
+  font-size: 0.7rem;
+  justify-content: center;
+  align-items: center;
+}
+.tituloCompleto:hover {
+  background-color: var(--color_enfasis);
+  color: var(--color_texto);
+  scale: 1.5;
+}
+.tituloAbreviado {
+  box-sizing: border-box;
+  margin-top: 15px;
+  border: var(--color_fondoPrincipal) solid 1px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-color: var(--color_texto);
+  height: 10%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.contenido {
+  width: 80%;
+  color: var(--color_texto);
+}
+.tituloDelTemaActivo {
+  box-sizing: border-box;
+  margin: 0;
+  height: 10%;
+}
+.VideoActivo {
+  box-sizing: border-box;
+  margin: 0;
+  height: 40%;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.contenedorDeListaDeVideos {
+  box-sizing: border-box;
+  margin: 0;
+  height: 10%;
+}
+.tituloVideosTeoricos {
+  box-sizing: border-box;
+  margin: 0;
+  height: 5%;
+}
+.tituloVideosPracticos {
+  box-sizing: border-box;
+  margin: 0;
+  height: 5%;
+}
+.contenedorMiniaturas {
+  display: flex;
+  justify-content: space-evenly;
+  height: 100%;
+}
+.miniatura {
+  width: 100px;
+  height: 100%;
+  user-select: none;
+  cursor: pointer;
+  scale: 0.75;
+  transition: 0.2s ease-in-out;
+}
+.miniaturaImg {
+  width: 79%;
+}
+.miniatura:hover {
+  scale: 1;
+}
+.clase {
+  height: 20%;
+  color: var(--color_texto);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

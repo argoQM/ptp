@@ -1,0 +1,737 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Inconsolata:wght@200..900&family=Martian+Mono:wght@100..800&family=Nerko+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+.body {
+  margin: 0;
+  box-sizing: border-box;
+  --color_texto: #0e0036;
+  --color_fondoPrincipal: #f7e9d8;
+  --color_fondoPrincipal: #f4f4f4;
+  --color_enfasis: #f2875f;
+  background-color: var(--color_fondoPrincipal);
+  color: var(--color_texto);
+  font-family: "Arimo", "Martian Mono";
+  font-size: 1rem;
+  text-align: center;
+  transition: 0.3s;
+}
+.activo {
+  --color_texto: #f7e9d8;
+  --color_fondoPrincipal: #0e0036;
+  --color_enfasis: #ff3b1f;
+}
+/* ########################################################  Mensaje de inicio */
+.titulo-personalizado {
+  font-size: 1.5rem;
+}
+/* ########################################################  Componentes Principales*/
+.headerPrincipal {
+  max-width: 1200px;
+  width: 100dvw;
+  margin: auto;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4f4f4;
+  box-sizing: border-box;
+  padding: 0 15px;
+  border-radius: 25px;
+}
+.bodyPrincipal {
+  margin: auto;
+  max-width: 1200px;
+  border: transparent solid 2px;
+  box-sizing: border-box;
+  width: 100dvw;
+  height: 80vh;
+}
+.footerPrincipal {
+  margin: auto;
+  max-width: 1200px;
+  width: 100dvw;
+  height: 10vh;
+  box-sizing: border-box;
+  padding: 0px 5px 25px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.5rem;
+  background-color: #f4f4f4;
+  box-sizing: border-box;
+  padding: 0 15px;
+  border-radius: 25px;
+  color: #0e0036;
+  user-select: none;
+}
+/* #########################################################  Header */
+
+.enlacesPrincipales {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logofq {
+  height: 8vh;
+  background-color: #f4f4f4;
+  border-radius: 25px;
+  box-sizing: border-box;
+  padding-right: 5px;
+}
+.enlacesPrincipales a {
+  text-decoration: none;
+  color: #0e0036;
+}
+.switchModo {
+  color: #0e0036;
+  box-sizing: border-box;
+  padding: 2px 5px;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.switchModo:hover {
+  color: #f46702;
+}
+/* ##########################################################   Body */
+/* ##########################################################   Cabecera */
+.contenedorCabecera {
+  height: 10%;
+  display: flex;
+  box-sizing: border-box;
+  border: transparent solid 2px;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  font-size: 3rem;
+}
+/* ###########################################################    Subtemas */
+.contenedorNBSubtemas {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  border: transparent solid 2px;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.subtema {
+  cursor: pointer;
+  user-select: none;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+.subtemaActiva {
+  border-bottom: var(--color_enfasis) solid 2px;
+  border-radius: 25px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.subtema:hover {
+  border-bottom: var(--color_enfasis) solid 2px;
+  border-radius: 25px;
+}
+/* ###########################################################    Contenido */
+.contenedorCuerpo {
+  height: 60%;
+  display: flex;
+  flex-flow: column;
+  box-sizing: border-box;
+  border: transparent solid 2px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/* -----------------------------------------------------------    Teoria */
+.botonesTeoria {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 25%;
+  height: 10%;
+}
+.btnTeo {
+  width: 15px;
+  height: 15px;
+  border-radius: 25px;
+  border: 1px solid var(--color_texto);
+}
+.btnTeo:hover {
+  background-color: var(--color_enfasis);
+}
+.btnTeoActiva {
+  background-color: var(--color_enfasis);
+  width: 20px;
+  height: 20px;
+}
+.contenedorMaterialTeorico {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+  height: 90%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.teoricos {
+  width: 100%;
+  height: 100%;
+}
+/* -----------------------------------------------------------    Preguntas Verdadero o Falso */
+.contenedorTarjetasVF {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  box-sizing: border-box;
+}
+.contenedorExplicacionVF {
+  width: 90%;
+  height: 40%;
+  border-radius: 15px;
+  transition: 0.3s;
+  overflow: auto;
+}
+
+.btnVF {
+  width: 50%;
+  height: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.btnVF button {
+  background-color: transparent;
+  color: var(--color_texto);
+  border: var(--color_texto) solid 1px;
+  height: 30px;
+  width: 100px;
+  border-radius: 15px;
+  padding: 2px 15px;
+}
+.btnVF button:hover {
+  background-color: var(--color_enfasis);
+  color: var(--color_texto);
+  border: var(--color_texto) solid 1px;
+}
+.enunciadoVF {
+  border: var(--color_enfasis) 1px solid;
+  border-radius: 15px;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+.rbtnVF {
+  width: 70%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.explicacionVF {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.tvf {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin: 0 5px;
+  transition: 0.5s ease-in;
+}
+.tvf:hover {
+  border-radius: 15px;
+  background-color: var(--color_enfasis);
+  color: var(--color_texto);
+}
+/* -----------------------------------------------------------    Preguntas Multiple Opcion */
+.contenedorTarjetasMO {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  box-sizing: border-box;
+}
+.btnMO {
+  width: 50%;
+  height: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.btnMO button {
+  background-color: transparent;
+  color: var(--color_texto);
+  border: var(--color_texto) solid 1px;
+  height: 30px;
+  width: 100px;
+  border-radius: 15px;
+  padding: 2px 15px;
+}
+.btnMO button:hover {
+  background-color: var(--color_enfasis);
+  color: var(--color_texto);
+  border: var(--color_texto) solid 1px;
+}
+
+.enunciadoMO {
+  border: var(--color_enfasis) 1px solid;
+  border-radius: 15px;
+  width: 100%;
+  height: 50%;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  overflow: auto;
+}
+.rbtnMO {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin: 5px 0;
+}
+.opcionMO {
+  width: 45%;
+}
+.contenedorExplicacionMO {
+  width: 80%;
+  height: 40%;
+  overflow: auto;
+}
+
+.explicacionMO {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.tmo {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin: 0 5px;
+  transition: 0.5s ease-in;
+}
+.tmo:hover {
+  background-color: var(--color_enfasis);
+  color: var(--color_texto);
+  border-radius: 15px;
+}
+/* -----------------------------------------------------------    Bibliografia */
+.contenedorResumen {
+  width: 100%;
+  height: 100%;
+}
+.resumenBio {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.contenedorFormulas {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.formulasBio {
+  height: 95%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formulasBio img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95%;
+  scale: 1;
+  transition: 0.3s;
+}
+.formulasBio img:hover {
+  scale: 1.75;
+}
+.contenedorBiblio {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 1.5rem;
+}
+.bibliografiaBio {
+  width: 150px;
+  height: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btnBibliografia {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 25%;
+  height: 5%;
+}
+.btnBibliografia span::after {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0.5;
+  box-sizing: border-box;
+  height: 25px;
+  width: 25px;
+  user-select: none;
+  color: var(--color_texto);
+  transition: 1s;
+  border-radius: 25px;
+}
+.btnBibliografia span:hover {
+  border: solid var(--color_texto) 1px;
+  color: var(--color_texto);
+  opacity: 1;
+}
+/* ############################################################   Secciones */
+.contenedorNBSecciones {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  border: transparent solid 2px;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: row;
+}
+.secciones {
+  font-size: 1.5rem;
+  border: var(--color_fondoPrincipal) solid 2px;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100px;
+  max-height: 40px;
+  cursor: pointer;
+  user-select: none;
+}
+.secciones i {
+  pointer-events: none;
+}
+.seccionActiva {
+  color: var(--color_texto);
+  background-color: var(--color_enfasis);
+  border-color: var(--color_texto);
+}
+.secciones:hover {
+  color: var(--color_texto);
+  background-color: var(--color_enfasis);
+  border-color: var(--color_texto);
+}
+/* ##############################################################   Temas */
+.contenedorNBTemas {
+  height: 10%;
+  display: flex;
+  box-sizing: border-box;
+  border: transparent solid 2px;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2rem;
+  width: 100%;
+}
+.tema {
+  cursor: pointer;
+  user-select: none;
+  box-sizing: border-box;
+  padding: 0 5px;
+}
+.tema:hover {
+  border-bottom: var(--color_enfasis) solid 2px;
+  border-radius: 25px;
+}
+/* ##############################################################   Footer */
+.logofqudelar {
+  height: 10dvh;
+  background-color: #f4f4f4;
+  border-radius: 25px;
+  box-sizing: border-box;
+  padding-right: 5px;
+}
+
+.detemaheader {
+  background-color: #f4f4f4;
+  border-radius: 25px;
+  box-sizing: border-box;
+  padding-right: 5px;
+  height: 5dvh;
+}
+.detema {
+  background-color: #f4f4f4;
+  border-radius: 25px;
+  box-sizing: border-box;
+  padding-right: 5px;
+  height: 75%;
+}
+
+@media (max-width: 950px) {
+  .formulasBio img:hover {
+    scale: 1.25;
+  }
+  .contenedorMaterialTeorico {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .tvf2 {
+    display: none;
+  }
+  .tmo2 {
+    display: none;
+  }
+  .contenedorCabecera {
+    font-size: 2rem;
+  }
+  .contenedorNBSubtemas {
+    font-size: 1.25rem;
+  }
+  .subtemaActiva {
+    font-size: 1.5rem;
+  }
+  .resumenBio {
+    font-size: 1rem;
+  }
+  .contenedorBiblio {
+    font-size: 1rem;
+  }
+  .contenedorNBTemas {
+    font-size: 1.5rem;
+  }
+  .footerPrincipal {
+    font-size: 1rem;
+    height: 5dvh;
+  }
+  .logofqudelar {
+    height: 5dvh;
+  }
+}
+@media (max-width: 675px) {
+  .formulasBio img:hover {
+    scale: 1;
+  }
+  .logofqudelar {
+    height: 5dvh;
+  }
+  .detemaheader {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .tvf1 {
+    display: none;
+  }
+  .tmo1 {
+    display: none;
+  }
+  .contenedorCabecera {
+    font-size: 1.5rem;
+  }
+  .contenedorNBSubtemas {
+    font-size: 1rem;
+  }
+  .subtemaActiva {
+    font-size: 1.25rem;
+  }
+  .resumenBio {
+    font-size: 0.75rem;
+  }
+  .contenedorBiblio {
+    font-size: 0.75rem;
+  }
+  .contenedorNBTemas {
+    font-size: 1.25rem;
+  }
+  .footerPrincipal {
+    font-size: 0.75rem;
+    height: 5dvh;
+  }
+  .contenedorTarjetasVF {
+    font-size: 1rem;
+  }
+  .contenedorTarjetasMO {
+    font-size: 1rem;
+  }
+  .formulasBio img {
+    width: 90%;
+  }
+  .logofqudelar {
+    height: 5dvh;
+  }
+}
+@media (max-width: 400px) {
+  .bedelias {
+    display: none;
+  }
+  .contenedorNBSubtemas {
+    font-size: 0.5rem;
+  }
+  .subtemaActiva {
+    font-size: 0.75rem;
+  }
+  .secciones {
+    font-size: 1rem;
+  }
+}
+@media (max-height: 900px) {
+  .secciones {
+    font-size: 1rem;
+    min-width: 75px;
+  }
+}
+@media (max-height: 775px) {
+  .contenedorCabecera {
+    font-size: 2rem;
+  }
+  .contenedorNBSubtemas {
+    font-size: 1rem;
+  }
+  .subtemaActiva {
+    font-size: 1.25rem;
+  }
+  .resumenBio {
+    font-size: 1rem;
+  }
+  .contenedorBiblio {
+    font-size: 1rem;
+  }
+  .contenedorNBTemas {
+    font-size: 1.5rem;
+  }
+  .footerPrincipal {
+    font-size: 1rem;
+    height: 5dvh;
+  }
+  .logofqudelar {
+    height: 5dvh;
+  }
+  .secciones {
+    font-size: 1rem;
+    min-width: 75px;
+  }
+}
+@media (max-height: 675px) {
+  .formulasBio img:hover {
+    scale: 1;
+  }
+  .logofqudelar {
+    height: 5dvh;
+  }
+  .contenedorNBSubtemas {
+    font-size: 0.75rem;
+  }
+  .subtemaActiva {
+    font-size: 1rem;
+  }
+  .secciones {
+    font-size: 0.75rem;
+    min-width: 75px;
+  }
+}
+@media (max-height: 550px) {
+  .contenedorCabecera {
+    font-size: 1.5rem;
+  }
+  .contenedorNBSubtemas {
+    font-size: 0.75rem;
+  }
+  .subtemaActiva {
+    font-size: 1rem;
+  }
+  .resumenBio {
+    font-size: 0.75rem;
+  }
+  .contenedorBiblio {
+    font-size: 0.75rem;
+  }
+  .contenedorNBTemas {
+    font-size: 1.25rem;
+  }
+  .footerPrincipal {
+    font-size: 0.75rem;
+    height: 5dvh;
+  }
+  .contenedorTarjetasVF {
+    font-size: 0.7rem;
+  }
+  .contenedorTarjetasMO {
+    font-size: 0.7rem;
+  }
+
+  .logofqudelar {
+    height: 5dvh;
+  }
+  .secciones {
+    font-size: 0.75rem;
+    min-width: 75px;
+  }
+}
+@media (max-height: 400px) {
+  .bedelias {
+    display: none;
+  }
+  .contenedorNBSubtemas {
+    font-size: 0.5rem;
+  }
+  .subtemaActiva {
+    font-size: 0.75rem;
+  }
+  .secciones {
+    font-size: 0.5rem;
+    min-width: 50px;
+  }
+}
+/* Personaliza el ancho y el color de la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+}
+
+/* Personaliza la parte de la barra que se desliza (la "manija") */
+::-webkit-scrollbar-thumb {
+  background: var(--color_texto);
+  border-radius: 5px;
+}
+
+/* Cambia el color de la manija al pasar el cursor sobre ella */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color_fondoPrincipal);
+}
